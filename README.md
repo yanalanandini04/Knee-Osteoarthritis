@@ -37,6 +37,21 @@ python -m pytest -q
 
 Training uses ImageNet initialization when available, training-only augmentation, inverse-frequency class weights, and reports accuracy, macro precision/recall/F1, a confusion matrix, and quadratic weighted kappa. Evaluation writes `metrics.json` and `confusion_matrix.png`.
 
+For a guide demonstration, run the checks and evaluation before starting the app:
+
+```powershell
+python -m pytest -q
+python run_checks.py
+python -m src.evaluate --data-dir data --checkpoint checkpoints/best.pt --output-dir artifacts
+streamlit run app.py
+```
+
+The monitoring screen reports repetitions, the measured knee angle, and corrective
+feedback. It ignores frames where the hip, knee, or ankle landmarks are not visible
+enough, which helps avoid counting unreliable repetitions. Camera access is local to
+the machine running Streamlit, and the user should stop if pain, dizziness, or other
+concerning symptoms occur.
+
 ## Run the application
 
 ```powershell

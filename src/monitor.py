@@ -1,5 +1,4 @@
 from dataclasses import dataclass
-from typing import Optional
 
 import numpy as np
 
@@ -9,17 +8,29 @@ class MonitorState:
     repetitions: int = 0
     phase: str = "ready"
     feedback: str = "Stand where your full body is visible"
+    knee_angle: float | None = None
 
 
 def angle(a, b, c) -> float:
     a, b, c = np.array(a), np.array(b), np.array(c)
     radians = np.arctan2(c[1] - b[1], c[0] - b[0]) - np.arctan2(a[1] - b[1], a[0] - b[0])
-    return float(abs(np.degrees(radians)) % 360)
+    degrees = abs(np.degrees(radians)) % 360
+    return float(min(degrees, 360 - degrees))
+
+
+def _landmark_visible(landmark, threshold: float = 0.5) -> bool:
+    return getattr(landmark, "visibility", 1.0) >= threshold
 
 
 def assess_knee_flexion(landmarks, state: MonitorState) -> MonitorState:
     hip, knee, ankle = landmarks[23], landmarks[25], landmarks[27]
+    if not all(_landmark_visible(point) for point in (hip, knee, ankle)):
+        state.feedback = "Move so your hip, knee, and ankle are visible"
+        state.knee_angle = None
+        return state
+
     knee_angle = angle((hip.x, hip.y), (knee.x, knee.y), (ankle.x, ankle.y))
+    state.knee_angle = knee_angle
     if knee_angle < 75:
         state.feedback = "Keep the movement controlled"
         state.phase = "bent"

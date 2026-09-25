@@ -21,7 +21,7 @@ def predict(image: Image.Image, model, class_names: list[str], device: torch.dev
 
 
 def overlay_cam(image: Image.Image, cam: np.ndarray):
-    import matplotlib.cm as cm
+    from matplotlib import colormaps
     base = np.asarray(image.convert("RGB").resize((IMAGE_SIZE, IMAGE_SIZE))).astype(np.float32) / 255
-    heat = cm.get_cmap("jet")(cam)[..., :3]
+    heat = colormaps.get_cmap("jet")(cam)[..., :3]
     return np.clip(0.55 * base + 0.45 * heat, 0, 1)
