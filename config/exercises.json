@@ -5,7 +5,7 @@
       "instructions": "Sit tall with your back supported. Slowly straighten one knee, pause, then lower with control.",
       "target_movement": "knee_extension",
       "repetitions": 10,
-      "video_url": "https://www.youtube.com/watch?v=5M2p9sYQm9E",
+      "video_url": "https://example.com/videos/supported-knee-extension.mp4",
       "clinical_note": "Low-load movement option; stop if pain increases and seek professional guidance."
     },
     {
@@ -13,7 +13,7 @@
       "instructions": "With your foot supported, slide your heel toward the chair and return slowly.",
       "target_movement": "knee_flexion",
       "repetitions": 10,
-      "video_url": "https://www.youtube.com/watch?v=8h5c3sY9J8I",
+      "video_url": "https://example.com/videos/seated-heel-slide.mp4",
       "clinical_note": "Use a comfortable range and follow your clinician's instructions."
     }
   ],
@@ -23,7 +23,7 @@
       "instructions": "Sit tall with your back supported. Slowly straighten one knee, pause, then lower with control.",
       "target_movement": "knee_extension",
       "repetitions": 10,
-      "video_url": "https://www.youtube.com/watch?v=5M2p9sYQm9E",
+      "video_url": "https://example.com/videos/supported-knee-extension.mp4",
       "clinical_note": "Low-load movement option; stop if pain increases and seek professional guidance."
     },
     {
@@ -31,7 +31,7 @@
       "instructions": "Hold a stable support, keep your thighs aligned, and gently bend one knee backward.",
       "target_movement": "knee_flexion",
       "repetitions": 8,
-      "video_url": "https://www.youtube.com/watch?v=4wQ6fK2h2pA",
+      "video_url": "https://example.com/videos/standing-hamstring-curl.mp4",
       "clinical_note": "Keep the movement controlled and use support for balance."
     }
   ],
@@ -41,7 +41,7 @@
       "instructions": "From a firm chair, lean slightly forward and stand using your legs. Sit down slowly.",
       "target_movement": "sit_to_stand",
       "repetitions": 8,
-      "video_url": "https://www.youtube.com/watch?v=8wYQW1dY9zQ",
+      "video_url": "https://example.com/videos/supported-sit-to-stand.mp4",
       "clinical_note": "Use a chair and supervision if needed; ask a clinician whether this is suitable."
     },
     {
@@ -49,7 +49,7 @@
       "instructions": "Hold a stable support, keep your thighs aligned, and gently bend one knee backward.",
       "target_movement": "knee_flexion",
       "repetitions": 8,
-      "video_url": "https://www.youtube.com/watch?v=4wQ6fK2h2pA",
+      "video_url": "https://example.com/videos/standing-hamstring-curl.mp4",
       "clinical_note": "Keep the movement controlled and use support for balance."
     }
   ],
@@ -59,7 +59,7 @@
       "instructions": "Hold a stable support and gently shift weight from one leg to the other without twisting.",
       "target_movement": "weight_shift",
       "repetitions": 10,
-      "video_url": "https://www.youtube.com/watch?v=Q5B8Z8mKz7M",
+      "video_url": "https://example.com/videos/supported-weight-shift.mp4",
       "clinical_note": "Balance work should be supervised when necessary."
     }
   ],
@@ -69,7 +69,7 @@
       "instructions": "Sit supported and move the knee only through a comfortable range, slowly and smoothly.",
       "target_movement": "knee_flexion",
       "repetitions": 5,
-      "video_url": "https://www.youtube.com/watch?v=8h5c3sY9J8I",
+      "video_url": "https://example.com/videos/gentle-seated-rom.mp4",
       "clinical_note": "For higher grades, obtain clinician guidance before exercise."
     }
   ]
