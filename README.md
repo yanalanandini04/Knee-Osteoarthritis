@@ -58,7 +58,9 @@ concerning symptoms occur.
 streamlit run app.py
 ```
 
-Upload a knee X-ray after training to receive the predicted KL grade, severity label, confidence, and Grad-CAM. Then choose an exercise, open its instructional video, and start camera monitoring. Camera monitoring requires a local camera and the installed MediaPipe package.
+Upload a knee X-ray after training to receive the predicted KL grade, severity label, confidence, and Grad-CAM. Choose a recommended exercise and select **Start rehabilitation** to replace the prediction view with the rehabilitation screen.
+
+The rehabilitation screen uses the exercise recommended for the predicted KL grade and shows an animated avatar specific to that movement. Each exercise defines landmark requirements, angle ranges, repetition rules, and corrective prompts. Select **Start Exercise** to allow camera access and begin MediaPipe Pose monitoring. Keep the required landmarks visible and select **Stop monitoring** when finished. These movement rules are transparent educational heuristics, not clinical assessments.
 
 ## Notes
 

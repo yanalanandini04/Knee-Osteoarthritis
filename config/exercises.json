@@ -1,76 +1,179 @@
 {
-  "0": [
-    {
+  "exercises": {
+    "Supported knee extension": {
       "name": "Supported knee extension",
-      "instructions": "Sit tall with your back supported. Slowly straighten one knee, pause, then lower with control.",
       "target_movement": "knee_extension",
+      "avatar_movement": "seated_knee_extension",
+      "recommended_grades": [0, 1],
+      "applicable_grades": [0, 1],
+      "instructions": "Sit tall with your back supported. Slowly straighten one knee, pause, then lower with control.",
+      "clinical_note": "Low-load movement option; stop if pain increases.",
       "repetitions": 10,
-      "video_url": "https://example.com/videos/supported-knee-extension.mp4",
-      "clinical_note": "Low-load movement option; stop if pain increases and seek professional guidance."
+      "required_landmarks": ["hip", "knee", "ankle"],
+      "joint_angles": {"knee": ["hip", "knee", "ankle"]},
+      "acceptable_angle_range": [90, 175],
+      "repetition_logic": {
+        "start_angle_max": 110,
+        "complete_angle_min": 155,
+        "min_duration_seconds": 0.8
+      },
+      "corrective_feedback": {
+        "missing_landmarks": "Move so your hip, knee, and ankle are visible",
+        "start": "Straighten your leg",
+        "complete": "Good movement",
+        "range": "Move through your comfortable range of motion",
+        "incorrect": "Maintain proper form and posture",
+        "no_pose": "Move into frame so your body is visible",
+        "posture": "Maintain proper posture",
+        "too_fast": "Move more slowly through the movement"
+      }
     },
-    {
+    "Seated heel slide": {
       "name": "Seated heel slide",
+      "target_movement": "knee_flexion",
+      "avatar_movement": "seated_heel_slide",
+      "recommended_grades": [0],
+      "applicable_grades": [0],
       "instructions": "With your foot supported, slide your heel toward the chair and return slowly.",
-      "target_movement": "knee_flexion",
+      "clinical_note": "Use a comfortable range and follow clinician instructions.",
       "repetitions": 10,
-      "video_url": "https://example.com/videos/seated-heel-slide.mp4",
-      "clinical_note": "Use a comfortable range and follow your clinician's instructions."
-    }
-  ],
-  "1": [
-    {
-      "name": "Supported knee extension",
-      "instructions": "Sit tall with your back supported. Slowly straighten one knee, pause, then lower with control.",
-      "target_movement": "knee_extension",
-      "repetitions": 10,
-      "video_url": "https://example.com/videos/supported-knee-extension.mp4",
-      "clinical_note": "Low-load movement option; stop if pain increases and seek professional guidance."
+      "required_landmarks": ["hip", "knee", "ankle"],
+      "joint_angles": {"knee": ["hip", "knee", "ankle"]},
+      "acceptable_angle_range": [70, 170],
+      "repetition_logic": {
+        "start_angle_max": 110,
+        "complete_angle_min": 155,
+        "min_duration_seconds": 0.8
+      },
+      "corrective_feedback": {
+        "missing_landmarks": "Move so your hip, knee, and ankle are visible",
+        "start": "Bend your knee further",
+        "complete": "Good movement",
+        "range": "Slide heel smoothly through pain-free range",
+        "incorrect": "Maintain smooth controlled motion",
+        "no_pose": "Move into frame so your body is visible",
+        "posture": "Maintain proper posture",
+        "too_fast": "Move more slowly through the movement"
+      }
     },
-    {
+    "Standing hamstring curl": {
       "name": "Standing hamstring curl",
-      "instructions": "Hold a stable support, keep your thighs aligned, and gently bend one knee backward.",
       "target_movement": "knee_flexion",
+      "avatar_movement": "standing_hamstring_curl",
+      "recommended_grades": [1, 2],
+      "applicable_grades": [1, 2],
+      "instructions": "Hold a stable support, keep your thighs aligned, and gently bend one knee backward.",
+      "clinical_note": "Keep the movement controlled and use support for balance.",
       "repetitions": 8,
-      "video_url": "https://example.com/videos/standing-hamstring-curl.mp4",
-      "clinical_note": "Keep the movement controlled and use support for balance."
-    }
-  ],
-  "2": [
-    {
+      "required_landmarks": ["hip", "knee", "ankle"],
+      "joint_angles": {"knee": ["hip", "knee", "ankle"]},
+      "acceptable_angle_range": [80, 175],
+      "repetition_logic": {
+        "start_angle_max": 110,
+        "complete_angle_min": 155,
+        "min_duration_seconds": 0.8
+      },
+      "corrective_feedback": {
+        "missing_landmarks": "Move so your hip, knee, and ankle are visible",
+        "start": "Bend your knee backward",
+        "complete": "Good movement",
+        "range": "Lift heel toward glute without arching back",
+        "incorrect": "Keep thighs parallel and posture upright",
+        "no_pose": "Move into frame so your body is visible",
+        "posture": "Maintain proper posture",
+        "too_fast": "Move more slowly through the movement"
+      }
+    },
+    "Supported sit-to-stand": {
       "name": "Supported sit-to-stand",
-      "instructions": "From a firm chair, lean slightly forward and stand using your legs. Sit down slowly.",
       "target_movement": "sit_to_stand",
+      "avatar_movement": "supported_sit_to_stand",
+      "recommended_grades": [2],
+      "applicable_grades": [2],
+      "instructions": "From a firm chair, lean slightly forward and stand using your legs. Sit down slowly.",
+      "clinical_note": "Use a chair and supervision if needed.",
       "repetitions": 8,
-      "video_url": "https://example.com/videos/supported-sit-to-stand.mp4",
-      "clinical_note": "Use a chair and supervision if needed; ask a clinician whether this is suitable."
+      "required_landmarks": ["hip", "knee", "ankle"],
+      "joint_angles": {"knee": ["hip", "knee", "ankle"]},
+      "acceptable_angle_range": [90, 175],
+      "repetition_logic": {
+        "start_angle_max": 110,
+        "complete_angle_min": 155,
+        "min_duration_seconds": 0.8
+      },
+      "corrective_feedback": {
+        "missing_landmarks": "Move so your hip, knee, and ankle are visible",
+        "start": "Stand upright",
+        "complete": "Good movement",
+        "range": "Extend knees fully to standing position",
+        "incorrect": "Do not collapse inward at the knees",
+        "no_pose": "Move into frame so your body is visible",
+        "posture": "Maintain proper posture",
+        "too_fast": "Move more slowly through the movement"
+      }
     },
-    {
-      "name": "Standing hamstring curl",
-      "instructions": "Hold a stable support, keep your thighs aligned, and gently bend one knee backward.",
-      "target_movement": "knee_flexion",
-      "repetitions": 8,
-      "video_url": "https://example.com/videos/standing-hamstring-curl.mp4",
-      "clinical_note": "Keep the movement controlled and use support for balance."
-    }
-  ],
-  "3": [
-    {
+    "Supported weight shift": {
       "name": "Supported weight shift",
-      "instructions": "Hold a stable support and gently shift weight from one leg to the other without twisting.",
       "target_movement": "weight_shift",
+      "avatar_movement": "supported_weight_shift",
+      "recommended_grades": [3],
+      "applicable_grades": [3],
+      "instructions": "Hold a stable support and gently shift weight from one leg to the other without twisting.",
+      "clinical_note": "Balance work should be supervised when necessary.",
       "repetitions": 10,
-      "video_url": "https://example.com/videos/supported-weight-shift.mp4",
-      "clinical_note": "Balance work should be supervised when necessary."
-    }
-  ],
-  "4": [
-    {
+      "required_landmarks": ["hip", "knee", "ankle"],
+      "joint_angles": {"knee": ["hip", "knee", "ankle"]},
+      "acceptable_angle_range": [160, 180],
+      "repetition_logic": {
+        "alternating": true,
+        "shift_threshold": 0.03,
+        "min_duration_seconds": 0.8
+      },
+      "corrective_feedback": {
+        "missing_landmarks": "Move so your hips and feet are visible",
+        "start": "Shift weight to your other side",
+        "complete": "Good movement",
+        "range": "Maintain controlled pelvic sway within comfortable boundary",
+        "incorrect": "Keep your knees soft and avoid sudden shifts",
+        "no_pose": "Move into frame so your body is visible",
+        "posture": "Maintain proper posture",
+        "too_fast": "Move more slowly through the movement"
+      }
+    },
+    "Gentle seated range of motion": {
       "name": "Gentle seated range of motion",
-      "instructions": "Sit supported and move the knee only through a comfortable range, slowly and smoothly.",
       "target_movement": "knee_flexion",
+      "avatar_movement": "gentle_seated_range_of_motion",
+      "recommended_grades": [3, 4],
+      "applicable_grades": [3, 4],
+      "instructions": "Sit supported and move the knee only through a comfortable range, slowly and smoothly.",
+      "clinical_note": "For higher grades, obtain clinician guidance before exercise.",
       "repetitions": 5,
-      "video_url": "https://example.com/videos/gentle-seated-rom.mp4",
-      "clinical_note": "For higher grades, obtain clinician guidance before exercise."
+      "required_landmarks": ["hip", "knee", "ankle"],
+      "joint_angles": {"knee": ["hip", "knee", "ankle"]},
+      "acceptable_angle_range": [90, 155],
+      "repetition_logic": {
+        "start_angle_max": 110,
+        "complete_angle_min": 155,
+        "min_duration_seconds": 0.8
+      },
+      "corrective_feedback": {
+        "missing_landmarks": "Move so your hip, knee, and ankle are visible",
+        "start": "Gently move your knee",
+        "complete": "Good movement",
+        "range": "Work strictly within your pain-free zone",
+        "incorrect": "Avoid sharp or forced joint movements",
+        "no_pose": "Move into frame so your body is visible",
+        "posture": "Maintain proper posture",
+        "too_fast": "Move more slowly through the movement"
+      }
     }
-  ]
+  },
+  "grade_mapping": {
+    "0": ["Supported knee extension", "Seated heel slide"],
+    "1": ["Supported knee extension", "Standing hamstring curl"],
+    "2": ["Supported sit-to-stand", "Standing hamstring curl"],
+    "3": ["Supported weight shift", "Gentle seated range of motion"],
+    "4": ["Gentle seated range of motion"]
+  }
 }
